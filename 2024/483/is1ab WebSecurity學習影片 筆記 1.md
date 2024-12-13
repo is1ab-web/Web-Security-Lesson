@@ -1,31 +1,5 @@
----
-title: is1ab WebSecurity學習影片 筆記 1
-tags: [is1ab-note]
-
----
-
 ##### tags: `is1ab-note`
 <h1 style="font-size: 3rem;">is1ab WebSecurity學習影片 筆記 1 (11/24/2024)</h1> 
-// 1rem = 16px ; 3rem = 48px
-
-<style>
-.red {
-  color: red;
-}
-.blue {
-  color: blue;
-}
-.purple {
-  color: #7D3382;
-}
-.light_purple {
-  color: #810cf5;
-}
-</style>
-
-<span class=""></span>
-
-
 
 # <span class="red">**簡單Web拆解步驟**</span>
 
