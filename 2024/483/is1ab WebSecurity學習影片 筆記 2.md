@@ -1,6 +1,8 @@
 ##### tags: `is1ab-note`
 <h1 style="font-size: 3rem;">is1ab WebSecurity學習影片 筆記 2 (12/1/2024)</h1> 
 
+
+
 # <span class="red">**Outline**</span>
 
 - <span class="red">**Injection**</span>
@@ -192,8 +194,8 @@
         - ![image](https://hackmd.io/_uploads/rkuqRV3QJx.png)
     * **所以我們必須使用像是python中的<span class="light_purple">global</span>(全域變數)、<span class="light_purple">class</span>才能RCE**
         - ![image](https://hackmd.io/_uploads/Hk9SkBh7kx.png)
-        - ![image](https://hackmd.io/_uploads/B119eS27ke.png)
         - ![image](https://hackmd.io/_uploads/HJPilH37ke.png)
+        - **<span class="red">2025 TSC CTF calc</span>：https://hackmd.io/@AndyShen/Bkv4jiNDkx**
 
 ### <span class="red">**Other Template Engines**</span>
 
@@ -293,7 +295,7 @@
     
     * ![image](https://hackmd.io/_uploads/SyKhjaPVkg.png)
 
-    * **Thus, we can do it with <span class="light_purple">CRLF Injection</span>, too**
+    * **當然，我們也可以做到 <span class="light_purple">CRLF Injection</span>**
 
     * ![image](https://hackmd.io/_uploads/Syj_2TDEJg.png)
 
