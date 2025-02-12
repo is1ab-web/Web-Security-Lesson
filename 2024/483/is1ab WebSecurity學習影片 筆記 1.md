@@ -1,7 +1,29 @@
-##### tags: `is1ab-note`
-<h1 style="font-size: 3rem;">is1ab WebSecurity學習影片 筆記 1 (11/24/2024)</h1> 
+---
+title: is1ab WebSecurity學習影片 筆記 1
+tags: [is1ab-note]
 
-# <span class="red">**簡單Web拆解步驟**</span>
+---
+
+##### tags: `is1ab-note`
+<h1 style="font-size: 3rem;">is1ab WebSecurity學習影片 筆記 1 (11/24/2024)</h1>
+
+<style>
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.purple {
+  color: #7D3382;
+}
+.light_purple {
+  color: #810cf5;
+}
+</style>
+
+
+# <span class="red">簡單Web拆解步驟</span>
 
 1. <span class="purple">**觀察網站(像是有甚麼功能、使用者介面...)**</span>
 
@@ -9,43 +31,54 @@
 
 &emsp;
 
-# <span class="red">**Broken Access Control**</span>
+# <span class="red">Broken Access Control</span>
 
 - <span class="purple">**垂直越權：普通用戶 → 管理員**</span>
-    * /admin_panel
-    * /admin
-    * /admin_deluser
+    - **```/admin_panel```**
+    - **```/admin```**
+    - **```/admin_deluser```**
 
+- **<span class="red">2024 新生盃 不要跑</span>：https://hackmd.io/@AndyShen/r1AP2biN1x**
 
 - <span class="purple">**水平越權：使用者A → 使用者B**</span>
-    * /myAccount?user=5
-    * /myAccount?user=6
+    - **```/myAccount?user=5```**
+    - **```/myAccount?user=6```**
 
 * <span class="purple">**Insecure direct object reference (IDOR)**</span>
 
-# <span class="red">**經典漏洞**</span>
-
-* <span class="blue">**Path Traversal / Local File Inclusion (LFI)**</span>
-    * ![image](https://hackmd.io/_uploads/BJTMQwgX1x.png)
-    * <span class="blue">**將上圖連結變成下圖**</span>
-    * ![image](https://hackmd.io/_uploads/Hy8wXwxXye.png)
-    * ![image](https://hackmd.io/_uploads/rkfN7wg7yx.png)
-
-* <span class="blue">**XSS**</span>
-    * ![image](https://hackmd.io/_uploads/rkIHBvgm1l.png)
-    * ![image](https://hackmd.io/_uploads/BJvvSvg7Jx.png)
-    * ![image](https://hackmd.io/_uploads/ryUIBwemyg.png)
-    * <span class="blue">**將上圖的XSS變成下圖**</span>
-    * ![image](https://hackmd.io/_uploads/SkARVPgQJe.png)
-
-* <span class="blue">**CSRF**</span>
-* <span class="blue">**SQL Injection**</span>
-* <span class="blue">**Command Injection**</span>
-    * ![image](https://hackmd.io/_uploads/rygzIvx7Jx.png)
+- **<span class="red">2025 TSC CTF Be_IDol</span>：https://hackmd.io/@AndyShen/rJnGZYPvye**
 
 &emsp;
 
-# <span class="red">**Web世界觀**</span>
+# <span class="red">經典漏洞</span>
+
+## <span class="blue">Path Traversal / Local File Inclusion (LFI)</span>
+
+![image](https://hackmd.io/_uploads/BJTMQwgX1x.png)
+<span class="blue">**將上圖連結變成下圖**</span>
+![image](https://hackmd.io/_uploads/Hy8wXwxXye.png)
+![image](https://hackmd.io/_uploads/rkfN7wg7yx.png)
+
+- **<span class="red">HTB Baby Nginxatsu</span>： https://hackmd.io/G0CanGsTTzC11FRJbw15kA**
+
+- **<span class="red">2025 TSC CTF Ave Mujica</span>：https://hackmd.io/@AndyShen/SJ6kIWGPkg**
+
+## <span class="blue">**XSS**</span>
+![image](https://hackmd.io/_uploads/rkIHBvgm1l.png)
+![image](https://hackmd.io/_uploads/BJvvSvg7Jx.png)
+![image](https://hackmd.io/_uploads/ryUIBwemyg.png)
+<span class="blue">**將上圖的XSS變成下圖**</span>
+![image](https://hackmd.io/_uploads/SkARVPgQJe.png)
+
+## <span class="blue">CSRF</span>
+## <span class="blue">**SQL Injection**</span>
+## <span class="blue">**Command Injection**</span>
+
+- ![image](https://hackmd.io/_uploads/rygzIvx7Jx.png)
+
+&emsp;
+
+# <span class="red">Web世界觀</span>
 
 - ![image](https://hackmd.io/_uploads/Hkp3dvemyl.png)
 
@@ -70,7 +103,7 @@
 * **Operation Environment**
     - OS(Linux/Windows), Cloud, Container
 
-## <span class="red">**HTTP Protocol**</span>
+## <span class="red">HTTP Protocol</span>
 
 * <span class="blue">**HTTP：<span class="red">H</span>yper<span class="red">T</span>ext <span class="red">T</span>ransfer <span class="red">P</span>rotocol**</span>
 
@@ -78,7 +111,7 @@
 
 &emsp;
 
-### <span class="red">**HTTP request**</span>
+### <span class="red">HTTP request</span>
     
 - ![image](https://hackmd.io/_uploads/SJb2Ave7kg.png)
 - <span class="blue">**\r\n：HTTP使用CR(\r)LF(\n)換行**</span>
@@ -96,7 +129,7 @@
 
 &emsp;
 
-### <span class="red">**HTTP response**</span>
+### <span class="red">HTTP response</span>
 
 - ![image](https://hackmd.io/_uploads/B1UdNpZXkx.png)
 - <span class="blue">**\r\n：HTTP使用CR(\r)LF(\n)換行**</span>
@@ -118,7 +151,7 @@
 
 &emsp;
 
-## <span class="red">**Cookie**</span>
+## <span class="red">Cookie</span>
 
 - ![image](https://hackmd.io/_uploads/rkIH5a-myx.png)
 - <span class="blue">**在Header內**</span>
@@ -134,7 +167,7 @@
 
 &emsp;
 
-## <span class="red">**Web Hacking**</span>
+## <span class="red">Web Hacking</span>
 
 - <span class="red">**Fundamental Concept**</span>
 - ![image](https://hackmd.io/_uploads/Bkp-Jyfmkl.png)
@@ -145,7 +178,7 @@
 
 &emsp;
 
-## <span class="red">**Information Leak資訊洩漏**</span>
+## <span class="red">Information Leak資訊洩漏</span>
 
 - ![image](https://hackmd.io/_uploads/Hkf8ZJf71e.png)
 
@@ -163,7 +196,7 @@
 
 &emsp;
 
-## <span class="red">**URL的兩大分類**</span>
+## <span class="red">Web的兩大分類</span>
 
 - <span class="red">**File-based**</span>
     * ![image](https://hackmd.io/_uploads/r1LZSyfQJx.png)
@@ -171,16 +204,20 @@
 - <span class="red">**Route-based**</span>
     * ![image](https://hackmd.io/_uploads/Syuzr1GXyg.png)
 
-### <span class="red">**File-based：Webshell**</span>
+### <span class="red">File-based：Webshell</span>
 
 - ![image](https://hackmd.io/_uploads/rJ-TH1zmyg.png)
 
 - **e.g.(範例攻擊步驟)** : 
-    (1) **<span class="blue">echo <span class="purple">'<?php system($_GET["cmd"]); ?>'</span> > cmd.sh</span>**
-    (2) **將cmd.sh檔放入(沒限制的)上傳點並取得結果(產出)**
-    (3) **將獲得的結果加上 "<span class="blue">cmd=想要執行的shell script</span>" (e.g. <span class="blue">ls -al</span>)**
+    (1) **<span class="blue">echo <span class="purple">'<?php eval($_GET["cmd"]); ?>'</span> > <span class="red">cmd.php</span></span>**
+    (2) **將 cmd.php 檔放入(沒限制的)上傳點並取得結果(產出)**
+    (3) **將獲得的結果加上 "<span class="blue">cmd = 想要執行的 shell script</span>" (e.g. ```ls -al```)**
     (4) **就能夠從結果中獲得額外資訊**
     * ![image](https://hackmd.io/_uploads/H1Kx9j_71e.png)
+
+- **<span class="red">2024 新生盃 Babyshell</span>：https://hackmd.io/@AndyShen/B1E-roPHyg**
+
+- **<span class="red">ISS 期末 CTFd exchange：https://hackmd.io/@AndyShen/ryePCTJPJx**
 
 &emsp;
     
