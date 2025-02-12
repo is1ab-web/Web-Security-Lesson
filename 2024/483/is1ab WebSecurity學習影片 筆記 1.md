@@ -34,21 +34,22 @@
 
 ## <span class="blue">Path Traversal / Local File Inclusion (LFI)</span>
 
-![image](https://hackmd.io/_uploads/BJTMQwgX1x.png)
-<span class="blue">**將上圖連結變成下圖**</span>
-![image](https://hackmd.io/_uploads/Hy8wXwxXye.png)
-![image](https://hackmd.io/_uploads/rkfN7wg7yx.png)
+- ![image](https://hackmd.io/_uploads/BJTMQwgX1x.png)
+- <span class="blue">**將上圖連結變成下圖**</span>
+- ![image](https://hackmd.io/_uploads/Hy8wXwxXye.png)
+- ![image](https://hackmd.io/_uploads/rkfN7wg7yx.png)
 
 - **<span class="red">HTB Baby Nginxatsu</span>： https://hackmd.io/G0CanGsTTzC11FRJbw15kA**
 
 - **<span class="red">2025 TSC CTF Ave Mujica</span>：https://hackmd.io/@AndyShen/SJ6kIWGPkg**
 
 ## <span class="blue">**XSS**</span>
-![image](https://hackmd.io/_uploads/rkIHBvgm1l.png)
-![image](https://hackmd.io/_uploads/BJvvSvg7Jx.png)
-![image](https://hackmd.io/_uploads/ryUIBwemyg.png)
-<span class="blue">**將上圖的XSS變成下圖**</span>
-![image](https://hackmd.io/_uploads/SkARVPgQJe.png)
+
+- ![image](https://hackmd.io/_uploads/rkIHBvgm1l.png)
+- ![image](https://hackmd.io/_uploads/BJvvSvg7Jx.png)
+- ![image](https://hackmd.io/_uploads/ryUIBwemyg.png)
+- <span class="blue">**將上圖的XSS變成下圖**</span>
+- ![image](https://hackmd.io/_uploads/SkARVPgQJe.png)
 
 ## <span class="blue">CSRF</span>
 ## <span class="blue">**SQL Injection**</span>
